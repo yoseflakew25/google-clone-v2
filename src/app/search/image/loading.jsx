@@ -1,36 +1,22 @@
-"use client";
-
-import { AiOutlineCamera, AiOutlineSearch } from "react-icons/ai";
-import { usePathname, useRouter, useSearchParams } from "next/navigation";
-export default function SearchHeaderOptions() {
-  const pathname = usePathname();
-  const router = useRouter();
-  const searchParams = useSearchParams();
-  const searchTerm = searchParams.get("searchTerm");
-  function selectTab(tab) {
-    router.push(
-      `/search/${tab === "Images" ? "image" : "web"}?searchTerm=${searchTerm}`
-    );
-  }
+export default function loading() {
   return (
-    <div className="flex space-x-2 select-none border-b w-full justify-center lg:justify-start lg:pl-52 text-gray-700 text-sm">
-      <div
-        onClick={() => selectTab("All")}
-        className={`flex items-center space-x-1 border-b-4 border-transparent active:text-blue-500 cursor-pointer pb-3 px-2 ${
-          pathname === "/search/web" && "!text-blue-600 !border-blue-600"
-        }`}
-      >
-        <AiOutlineSearch className="text-md" />
-        <p>All</p>
+    <div className="pt-10 mx-2 lg:pl-52 max-w-6xl flex sm:space-x-4 flex-col sm:flex-row pb-42">
+      <div className="animate-pulse">
+        <div className="h-48 w-48 mb-4 bg-gray-200 rounded-md"></div>
+        <div className="h-2 w-48 mb-2.5 bg-gray-200 rounded-md"></div>
+        <div className="h-2 w-44 mb-2.5 bg-gray-200 rounded-md"></div>
       </div>
-      <div
-        onClick={() => selectTab("Images")}
-        className={`flex items-center space-x-1 border-b-4 border-transparent active:text-blue-500 cursor-pointer pb-3 px-2 ${
-          pathname === "/search/image" && "!text-blue-600 !border-blue-600"
-        }`}
-      >
-        <AiOutlineCamera className="text-md" />
-        <p>Images</p>
+      <div className="hidden sm:inline-flex sm:space-x-4">
+        <div className="animate-pulse">
+          <div className="h-48 w-48 mb-4 bg-gray-200 rounded-md"></div>
+          <div className="h-2 w-48 mb-2.5 bg-gray-200 rounded-md"></div>
+          <div className="h-2 w-44 mb-2.5 bg-gray-200 rounded-md"></div>
+        </div>
+        <div className="animate-pulse">
+          <div className="h-48 w-48 mb-4 bg-gray-200 rounded-md"></div>
+          <div className="h-2 w-48 mb-2.5 bg-gray-200 rounded-md"></div>
+          <div className="h-2 w-44 mb-2.5 bg-gray-200 rounded-md"></div>
+        </div>
       </div>
     </div>
   );

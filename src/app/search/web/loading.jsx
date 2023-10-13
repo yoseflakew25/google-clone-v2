@@ -1,37 +1,24 @@
-"use client";
-
-import { AiOutlineCamera, AiOutlineSearch } from "react-icons/ai";
-import { usePathname, useRouter, useSearchParams } from "next/navigation";
-export default function SearchHeaderOptions() {
-  const pathname = usePathname();
-  const router = useRouter();
-  const searchParams = useSearchParams();
-  const searchTerm = searchParams.get("searchTerm");
-  function selectTab(tab) {
-    router.push(
-      `/search/${tab === "Images" ? "image" : "web"}?searchTerm=${searchTerm}`
-    );
-  }
+export default function loading() {
   return (
-    <div className="flex space-x-2 select-none border-b w-full justify-center lg:justify-start lg:pl-52 text-gray-700 text-sm">
-      <div
-        onClick={() => selectTab("All")}
-        className={`flex items-center space-x-1 border-b-4 border-transparent active:text-blue-500 cursor-pointer pb-3 px-2 ${
-          pathname === "/search/web" && "!text-blue-600 !border-blue-600"
-        }`}
-      >
-        <AiOutlineSearch className="text-md" />
-        <p>All</p>
+    <>
+      <div className="mx-2 pt-10 max-w-6xl lg:pl-52 animate-pulse">
+        <div className="h-2.5 w-48 bg-gray-200 rounded-full mb-2.5"></div>
+        <div className="h-3.5 max-w-[360px] bg-gray-200 rounded-full mb-2.5"></div>
+        <div className="h-2 max-w-[560px] bg-gray-200 rounded-full mb-2.5"></div>
+        <div className="h-2 max-w-[530px] bg-gray-200 rounded-full mb-2.5"></div>
       </div>
-      <div
-        onClick={() => selectTab("Images")}
-        className={`flex items-center space-x-1 border-b-4 border-transparent active:text-blue-500 cursor-pointer pb-3 px-2 ${
-          pathname === "/search/image" && "!text-blue-600 !border-blue-600"
-        }`}
-      >
-        <AiOutlineCamera className="text-md" />
-        <p>Images</p>
+      <div className="mx-2 pt-10 max-w-6xl lg:pl-52 animate-pulse">
+        <div className="h-2.5 w-48 bg-gray-200 rounded-full mb-2.5"></div>
+        <div className="h-3.5 max-w-[360px] bg-gray-200 rounded-full mb-2.5"></div>
+        <div className="h-2 max-w-[560px] bg-gray-200 rounded-full mb-2.5"></div>
+        <div className="h-2 max-w-[530px] bg-gray-200 rounded-full mb-2.5"></div>
       </div>
-    </div>
+      <div className="mx-2 pt-10 max-w-6xl lg:pl-52 animate-pulse">
+        <div className="h-2.5 w-48 bg-gray-200 rounded-full mb-2.5"></div>
+        <div className="h-3.5 max-w-[360px] bg-gray-200 rounded-full mb-2.5"></div>
+        <div className="h-2 max-w-[560px] bg-gray-200 rounded-full mb-2.5"></div>
+        <div className="h-2 max-w-[530px] bg-gray-200 rounded-full mb-2.5"></div>
+      </div>
+    </>
   );
 }
