@@ -1,4 +1,23 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Google Search Engine Clone
+
+The Google Search Engine Clone is a web application that mimics the functionality and design of the Google search engine. It provides users with a familiar interface to perform searches and retrieve search results from the web. The project is built using React.js, a popular JavaScript library for building user interfaces.
+
+## Features
+
+ - **Search Bar**: Enter search queries and receive search results.
+ - **Search Results**: Display search results with titles, descriptions, and URLs.
+ - **Pagination**: Navigate through multiple pages of search results.
+ - **Google Search Buttons**: Access various search options, such as "Google Search" and "I'm Feeling Lucky."
+ - **Google Logo**: Display the iconic Google logo at the top of the page.
+ - **Responsive Design**: Enjoy a seamless search experience on different devices, including desktops, tablets, and mobile phones.
+
+## Screenshots
+
+![screenshot1](https://github.com/yoseflakew25/Furnish-Now/blob/main/1.png)
+![screenshot2](https://github.com/yoseflakew25/Furnish-Now/blob/main/2.png)
+![screenshot3](https://github.com/yoseflakew25/Furnish-Now/blob/main/3.png)
+![screenshot4](https://github.com/yoseflakew25/Furnish-Now/blob/main/4.png)
+![screenshot5](https://github.com/yoseflakew25/Furnish-Now/blob/main/5.png)
 
 ## Getting Started
 
