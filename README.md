@@ -13,11 +13,10 @@ The Google Search Engine Clone is a web application that mimics the functionalit
 
 ## Screenshots
 
-![screenshot1](https://github.com/yoseflakew25/Furnish-Now/blob/main/1.png)
-![screenshot2](https://github.com/yoseflakew25/Furnish-Now/blob/main/2.png)
-![screenshot3](https://github.com/yoseflakew25/Furnish-Now/blob/main/3.png)
-![screenshot4](https://github.com/yoseflakew25/Furnish-Now/blob/main/4.png)
-![screenshot5](https://github.com/yoseflakew25/Furnish-Now/blob/main/5.png)
+![screenshot1](https://github.com/yoseflakew25/google-clone-v2/blob/master/public/1.png)
+![screenshot1](https://github.com/yoseflakew25/google-clone-v2/blob/master/public/2.png)
+![screenshot1](https://github.com/yoseflakew25/google-clone-v2/blob/master/public/3.png)
+
 
 ## Getting Started
 
